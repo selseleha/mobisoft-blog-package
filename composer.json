@@ -1,0 +1,23 @@
+{
+    "name": "mobisoft/blog",
+    "description": "a simple blog",
+    "authors": [
+        {
+            "name": "alireza",
+            "email": "selseleha@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "mobisoft\\blog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mobisoft\\blog\\BlogServiceProvider"
+            ]
+        }
+    }
+}
