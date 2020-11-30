@@ -3,6 +3,7 @@
 namespace mobisoft\blog\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use mobisoft\blog\Controllers\Controller;
 use mobisoft\blog\Requests\PostsRequest;
 use mobisoft\blog\Requests\PostUpdateRequest;
@@ -56,7 +57,7 @@ class PostController extends Controller
         $post = Post::create(
             array_merge(
                 $request->all(),
-                ['author_id' => User::Authors(), 'image' => $input['imageName']]
+                ['author_id' => Auth::id(), 'image' => $input['imageName']]
             )
         );
         return redirect('post');
