@@ -1,6 +1,6 @@
 # mobisoft-blog-package
 
-#first install Auth for your Project
+# first install Auth for your Project
 
 composer require laravel/jetstream
 
@@ -10,11 +10,11 @@ composer require laravel/jetstream
 
 npm install and npm run dev for laravel Mix
 
-#Next install Package
+# Next install Package
 
  composer require mobisoft/blog
 
-#and migrate
+# and migrate
 
  php artisan migrate
 
